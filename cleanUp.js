@@ -8,23 +8,29 @@
 
 
 // EX 1:
-function askForName() { console.log("Hello, what is your name?") }
+function askForName(name) {
+  return `Thanks for telling me your name, ${name}!`;
+}
 
-askForName()
+  console.log(askForName("Pareesa"));
 
+
+//I introduced a parameter to the code, which makes it more dynamic and powerful
 
 // EX 2:
 function addThreeNums(first, second, third) {
 var sum = first + second + third
-return sum;
+console.log(sum);
       }
 
 addThreeNums(1, 2, 3);
 addThreeNums(4, 2, 7);
 
+//added the console.log command so that it prints the value, increases the functions utility
+
 
 // EX 3:
-func makeFreshPesto(){
+function makeFreshPesto(){
   console.log("Buy ingredients: basil, parmesan, romano, olive oil, pine nuts, garlic, salt, pepper");
   console.log("Pulse basil and pine nuts");
   console.log("Add garlic and cheeses");
@@ -33,12 +39,16 @@ func makeFreshPesto(){
 
 makeFreshPesto();
 
+//I changed "func" to "function" - I dont believe func will work at all. It's also better if a function returns a value to increase its utility. 
 
 //  EX 4:
 function average(num1, num2) 
   {
 var sum = num1 + num2;
     var avg = sum / 2;
-
-return avg
+    console.log(avg)
   }
+
+  average(100, 50)
+
+//I added the console.log command to the function so the value is printed
